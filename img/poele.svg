@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    id="svg2"
+    sodipodi:docname="pan.svg"
+    inkscape:export-filename="/home/rugby471/Desktop/pan.png"
+    viewBox="0 0 48 48"
+    sodipodi:version="0.32"
+    inkscape:export-xdpi="90"
+    version="1.0"
+    inkscape:output_extension="org.inkscape.output.svg.inkscape"
+    inkscape:export-ydpi="90"
+    inkscape:version="0.46"
+  >
+  <sodipodi:namedview
+      id="base"
+      bordercolor="#666666"
+      inkscape:pageshadow="2"
+      guidetolerance="10"
+      pagecolor="#ffffff"
+      gridtolerance="10000"
+      inkscape:zoom="7.9195959"
+      objecttolerance="10"
+      showgrid="false"
+      borderopacity="1.0"
+      inkscape:current-layer="layer1"
+      inkscape:cx="19.486314"
+      inkscape:cy="24.456445"
+      inkscape:pageopacity="0.0"
+      inkscape:document-units="px"
+  />
+  <g
+      id="layer1"
+      inkscape:label="Layer 1"
+      inkscape:groupmode="layer"
+    >
+    <g
+        id="g3208"
+        transform="matrix(.088018 0 0 .088018 -8.761 -23.288)"
+      >
+      <path
+          id="path2398"
+          sodipodi:nodetypes="ccsccsc"
+          style="stroke:#2e3436;stroke-width:10;fill:none"
+          d="m480.81 507.68l5.17 4.11c27.28-25.16 54.47-48.14 83.93-69.46 20.48-14.82 43.33-25.98 63.4-42.15 4.12-5.4 3.72-9.99 2.67-14.46-1.15 3.16-1.14 7.32-3.83 9.15-51.21 34.72-112.6 72.68-151.34 112.81z"
+      />
+      <path
+          id="path2396"
+          sodipodi:nodetypes="cccccc"
+          style="fill-rule:evenodd;stroke:#555753;stroke-width:10;fill:#babdb6"
+          d="m458.75 490.04c52.23-44.74 101.84-80.46 152.68-115.89 23.54-5 30.09 10.74 22.14 16.78-56.59 31.63-103.37 73.06-151.78 112.86l0.17 0.18-23.21-13.93z"
+      />
+      <path
+          id="path2402"
+          sodipodi:rx="175.71428"
+          sodipodi:ry="74.285713"
+          style="stroke-linejoin:round;stroke:#2e3436;stroke-linecap:round;stroke-width:7.8744;fill:#555753"
+          sodipodi:type="arc"
+          d="m473.57 528.79a175.71 74.286 0 1 1 -351.43 0 175.71 74.286 0 1 1 351.43 0z"
+          transform="matrix(1.1633 0 0 1.3863 -34.718 -171.78)"
+          sodipodi:cy="528.79077"
+          sodipodi:cx="297.85715"
+      />
+      <path
+          id="path2404"
+          sodipodi:rx="175.71428"
+          sodipodi:ry="74.285713"
+          style="stroke-linejoin:round;stroke:#151718;stroke-linecap:round;stroke-width:11.031;fill:#3b4346"
+          sodipodi:type="arc"
+          d="m473.57 528.79a175.71 74.286 0 1 1 -351.43 0 175.71 74.286 0 1 1 351.43 0z"
+          transform="matrix(.87252 0 0 .94190 51.901 106.08)"
+          sodipodi:cy="528.79077"
+          sodipodi:cx="297.85715"
+      />
+      <path
+          id="path3202"
+          style="opacity:.37607;stroke-linejoin:round;stroke:#ffffff;stroke-linecap:round;stroke-width:7.8744;fill:none"
+          sodipodi:type="inkscape:offset"
+          d="m297.84 462.5c-47.58 0-90.64 8.25-121.09 21.12-15.23 6.44-27.26 14.05-35.13 21.91-7.86 7.86-11.46 15.56-11.46 23.25s3.6 15.39 11.46 23.25c7.87 7.86 19.9 15.47 35.13 21.91 30.45 12.87 73.51 21.12 121.09 21.12 47.59 0 90.67-8.25 121.13-21.12 15.23-6.44 27.26-14.05 35.12-21.91 7.87-7.86 11.47-15.56 11.47-23.25s-3.6-15.39-11.47-23.25c-7.86-7.86-19.89-15.47-35.12-21.91-30.46-12.87-73.54-21.12-121.13-21.12z"
+          inkscape:original="M 297.84375 454.5 C 200.84947 454.5 122.15625 487.77554 122.15625 528.78125 C 122.15625 569.78696 200.84947 603.06251 297.84375 603.0625 C 394.83803 603.0625 473.56252 569.78696 473.5625 528.78125 C 473.5625 487.77554 394.83803 454.49999 297.84375 454.5 z "
+          transform="matrix(1.1633 0 0 1.3863 -34.718 -171.78)"
+          inkscape:radius="-8"
+      />
+      <path
+          id="path3198"
+          style="opacity:.38462;stroke-linejoin:round;stroke:#ffffff;stroke-linecap:round;stroke-width:11.031;fill:none"
+          sodipodi:type="inkscape:offset"
+          d="m297.84 465.5c-47.24 0-89.98 8.24-119.93 20.91-14.98 6.33-26.68 13.78-34.16 21.25s-10.59 14.39-10.59 21.12 3.11 13.66 10.59 21.13 19.18 14.91 34.16 21.25c29.95 12.66 72.69 20.9 119.93 20.9s89.98-8.24 119.94-20.9c14.98-6.34 26.71-13.78 34.19-21.25s10.59-14.4 10.59-21.13-3.11-13.65-10.59-21.12-19.21-14.92-34.19-21.25c-29.96-12.67-72.7-20.91-119.94-20.91z"
+          inkscape:original="M 297.84375 454.5 C 200.84947 454.5 122.15625 487.77554 122.15625 528.78125 C 122.15625 569.78696 200.84947 603.06251 297.84375 603.0625 C 394.83803 603.0625 473.56252 569.78696 473.5625 528.78125 C 473.5625 487.77554 394.83803 454.49999 297.84375 454.5 z "
+          transform="matrix(.87252 0 0 .94190 51.901 106.08)"
+          inkscape:radius="-11"
+      />
+      <path
+          id="path2400"
+          sodipodi:nodetypes="cscsc"
+          style="fill-rule:evenodd;stroke:#2e3436;stroke-width:10;fill:#888a85"
+          d="m492.86 608.91c-71.06 52.23-173.02 60.83-246.83 48.86-46.43-7.53-86.81-24.76-116.03-48.86 33.99 50.63 66.1 62.63 105.58 73.4 78.45 21.41 203.57 16.04 257.28-73.4z"
+      />
+      <path
+          id="path3206"
+          style="opacity:.52137;stroke:#ffffff;stroke-width:4;fill:none"
+          sodipodi:type="inkscape:offset"
+          d="m619.56 380.19c-1.56 0.02-3.46 0.29-5.47 0.65-47.82 33.36-94.5 67.15-143.25 108.28l10.28 6.13c46.77-38.59 92.72-78.83 148.32-110.03 0.57-0.45 0.66-0.6 0.03-1.66-0.7-1.17-3.21-3.47-9.91-3.37z"
+          inkscape:original="M 619.46875 373.1875 C 617.05212 373.224 614.38037 373.53091 611.4375 374.15625 C 560.59921 409.58614 510.98435 445.29433 458.75 490.03125 L 481.78125 503.78125 C 530.19216 463.97788 576.97369 422.56295 633.5625 390.9375 C 640.51605 385.64753 636.38514 372.93197 619.46875 373.1875 z "
+          inkscape:radius="-7"
+      />
+    </g
+    >
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >Tango Style Frying Pan</dc:title
+        >
+        <dc:date
+          >2009-03-29T13:05:19</dc:date
+        >
+        <dc:description
+          >A Tango Style Frying Pan</dc:description
+        >
+        <dc:source
+          >https://openclipart.org/detail/23492/tango-style-frying-pan-by-rugby471</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >rugby471</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >cooking</rdf:li
+            >
+            <rdf:li
+              >food</rdf:li
+            >
+            <rdf:li
+              >frying</rdf:li
+            >
+            <rdf:li
+              >frying pan</rdf:li
+            >
+            <rdf:li
+              >pan</rdf:li
+            >
+            <rdf:li
+              >tango</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>

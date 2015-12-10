@@ -1,0 +1,10 @@
+
+#titre{
+	text-align : center;
+	height:500px;
+	text-shadow : 2px 2px 1px #000000;
+	padding-top : 150px;
+	background-image:url('../img/pasta.jpg');
+	background-attachement : fixed;
+	background-size : cover;
+}
