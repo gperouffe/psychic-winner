@@ -19,22 +19,26 @@
 		
 		<div class="container">	
 			<h2>Mon frigo</h2> 
-			<h5>Sélectionnez les différents ingrédients dont vous disposez !</h5>
+			<h5>Sélectionnez les ingrédients dont vous disposez :</h5>
 			<div class="divider"></div>
 			</br>
 		
 		<div class="row">
-			<form action="resultats.php" method="POST">
-				<div class="col s12 m6 l2" name="viande[]">
+			<form action="resultats.php" method="post">
+				<div class="col s12 m6 l2" >
 					<h4>Viande</h4>
-					<p>
-						<input type="checkbox" class="filled-in" id="boeuf" value="boeuf" />
-						<label class="black-text" for="boeuf">Boeuf</label>
-					</p>
-					<p>
-						<input type="checkbox" class="filled-in " id="veau" value="veau" />
-						<label class="black-text" for="veau">Veau</label>
-					</p>
+					
+					<?php
+					$db = new SQLite3("db/cuisineEtudiante.db");
+					$reponse = $db->query('SELECT * FROM ingredients WHERE TYPE = 1');
+					while($tuple = $reponse->fetchArray()){
+					echo
+					'<p>
+						<input type="checkbox" class="filled-in" id="'.$tuple[1].'" name="viande" value="'.$tuple[1].'" />
+						<label class="black-text" for="'.$tuple[1].'">'.$tuple[1].'</label>
+					</p>';
+					}
+					?>
 					
 				</div>
 				<div class="col s12 m6 l2">
@@ -47,17 +51,9 @@
 						<input type="checkbox" class="filled-in" id="courgettes" name="légumes" value="courgettes" />
 						<label class="black-text" for="courgettes">Courgettes</label>
 					</p>
-					<p>
-						<input type="checkbox" class="filled-in" id="courgettes" name="légumes" value="courgettes" />
-						<label class="black-text" for="courgettes">Courgettes</label>
-					</p>
-					<p>
-						<input type="checkbox" class="filled-in" id="courgettes" name="légumes" value="courgettes" />
-						<label class="black-text" for="courgettes">Courgettes</label>
-					</p>
 					
 				</div>
-				<input type="submit" name="Appuie !"/>
+				<p><input type="submit" name="Appuie !"/></p>
 			</form>
 		</div>
 		</div>

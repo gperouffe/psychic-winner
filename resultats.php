@@ -19,8 +19,8 @@
 		
 		<?php 
 		echo "vous avez du ";
-		foreach ($_GET['viande'] as &$vian){
-		echo $vian;}
+		$viande =  $_POST['viande'];
+		echo $viande;
 		?> 
 		
 		<div id="footer"></div>
