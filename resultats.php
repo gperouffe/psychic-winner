@@ -14,10 +14,15 @@
 		<link rel="icon" href="img/poele.ico" type="image/x-icon">
 	</head>
 
-	<body>		
+	<body>	
 		<div id="header"></div>
-	
-	
+		
+		<?php 
+		echo "vous avez du ";
+		foreach ($_GET['viande'] as &$vian){
+		echo $vian;}
+		?> 
+		
 		<div id="footer"></div>
 		
 		<!--Import jQuery before materialize.js-->
