@@ -18,7 +18,7 @@
 		<div id="header"></div>
 		
 		<div class="container">	
-			<h2>Mon frigo</h2> 
+			<h2>Mon garde-manger</h2> 
 			<h5>Sélectionnez les ingrédients dont vous disposez :</h5>
 			<div class="divider"></div>
 			</br>
@@ -30,23 +30,28 @@
 				$listeTypes = $db->query('SELECT * FROM alimentcat');
 				while($type = $listeTypes->fetchArray()){
 				echo
-				'<div class="col s12 m6 l2" >
-					<h4>'.$type[1].'</h4>';
+				'<div class="col s12 m6 l4" >
+					<h5>'.$type[1].'</h5>';
 					
-					$reponse = $db->query('SELECT * FROM ingredients WHERE TYPE = '.$type[0]);
-					while($tuple = $reponse->fetchArray()){
+					$listeIngredients = $db->query('SELECT * FROM ingredients WHERE TYPE = '.$type[0]);
+					while($ingredient = $listeIngredients->fetchArray()){
 					echo
 					'<p>
-						<input type="checkbox" class="filled-in" id="'.$tuple[1].'" name="'.$type[1].'" value="'.$tuple[1].'" />
-						<label class="black-text" for="'.$tuple[1].'">'.$tuple[1].'</label>
+						<input type="checkbox" class="filled-in" id="'.$ingredient[1].'" name="placard[]" value="'.$ingredient[1].'" />
+						<label class="black-text" for="'.$ingredient[1].'">'.$ingredient[1].'</label>
 					</p>';
 					}
 				
 				echo
 				'</div>';
 				}
-				?>
-				<p><input type="submit" name="Appuie !"/></p>
+				$db->close();
+				?>  
+				<div class="col s12 m6 l4" >
+					<button class="btn-large waves-effect orange waves-light" type="submit" name="action">Rechercher
+						<i class="material-icons right">send</i>
+					</button>
+				</div>
 			</form>
 		</div>
 		</div>

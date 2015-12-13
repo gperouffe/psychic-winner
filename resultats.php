@@ -18,9 +18,10 @@
 		<div id="header"></div>
 		
 		<?php 
-		echo "vous avez du ";
-		$viande =  $_POST['viande'];
-		echo $viande;
+		$placard =  $_POST['placard'];
+		foreach($placard as $ingredient){
+			echo $ingredient.'<br>';
+		}
 		?> 
 		
 		<div id="footer"></div>

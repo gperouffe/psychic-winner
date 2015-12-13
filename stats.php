@@ -16,51 +16,6 @@
 
 	<body>	
 		<div id="header"></div>
-		
-		<div class="container">	
-			<h2>Mon frigo</h2> 
-			<h5>Sélectionnez les différents ingrédients dont vous disposez !</h5>
-			<div class="divider"></div>
-			</br>
-		
-		<div class="row">
-			<form action="index.html" method="GET">
-				<div class="col s12 m6 l2">
-					<h4>Viande</h4>
-					<p>
-						<input type="checkbox" class="filled-in" id="boeuf" name="viande" value="boeuf" />
-						<label class="black-text" for="boeuf">Boeuf</label>
-					</p>
-					<p>
-						<input type="checkbox" class="filled-in " id="veau" name="viande" value="veau" />
-						<label class="black-text" for="veau">Veau</label>
-					</p>
-					
-				</div>
-				<div class="col s12 m6 l2">
-					<h4>Légumes</h4>
-					<p>
-						<input type="checkbox" class="filled-in" id="poivrons" name="légumes" value="poivrons" />
-						<label class="black-text" for="poivrons">Poivrons</label>
-					</p>
-					<p>
-						<input type="checkbox" class="filled-in" id="courgettes" name="légumes" value="courgettes" />
-						<label class="black-text" for="courgettes">Courgettes</label>
-					</p>
-					<p>
-						<input type="checkbox" class="filled-in" id="courgettes" name="légumes" value="courgettes" />
-						<label class="black-text" for="courgettes">Courgettes</label>
-					</p>
-					<p>
-						<input type="checkbox" class="filled-in" id="courgettes" name="légumes" value="courgettes" />
-						<label class="black-text" for="courgettes">Courgettes</label>
-					</p>
-					
-				</div>
-				
-			</form>
-		</div>
-		</div>
 	
 		<div id="footer"></div>
 		
