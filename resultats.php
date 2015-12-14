@@ -1,3 +1,26 @@
+ 
+<?php 
+	$placard =  $_POST['placard'];
+	$db = new SQLite3("db/cuisineEtudiante.db");
+	$queryRecettes="SELECT IDRECETTE FROM correspondance WHERE IDINGR NOT IN(";
+	foreach($placard as $ingredient){
+		$queryRecettes = $queryRecettes."'".$ingredient."',";
+	}
+	$queryRecettes=substr($queryRecettes,0,strlen($queryRecettes)-1);
+	$queryRecettes = $queryRecettes.");";
+	$idRecettes = $db->query($queryRecettes);
+	$queryInfos="SELECT * FROM recettes WHERE ID NOT IN(";
+	$id = $idRecettes->fetchArray();
+	if($id!=false){
+		do{
+			$queryInfos = $queryInfos."'".$id[0]."',";
+		}while($id = $idRecettes->fetchArray());
+		$queryInfos=substr($queryInfos,0,strlen($queryInfos)-1);
+	}
+	$queryInfos = $queryInfos.");";
+	$infosRecettes = $db->query($queryInfos);
+?> 
+
  <!DOCTYPE html>
  <html>
 	<head>
@@ -17,12 +40,14 @@
 	<body>	
 		<div id="header"></div>
 		
-		<?php 
-		$placard =  $_POST['placard'];
-		foreach($placard as $ingredient){
-			echo $ingredient.'<br>';
-		}
-		?> 
+		<div class = "container">
+		<?php
+			while($recette = $infosRecettes->fetchArray()){
+				echo "<p>".$recette[1]."<br>".$recette[2]."</p>";
+			}
+			$db->close();
+		?> 	
+		</div>
 		
 		<div id="footer"></div>
 		

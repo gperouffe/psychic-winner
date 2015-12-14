@@ -20,7 +20,7 @@
 			<div class="row container">
 				<h2>Liste des recettes</h2>
 				<div class="divider"></div>
-				<div class="card small col s6 m4 l2">
+				<div class="card small col s12 m4 l3">
 					<div class="card-image waves-effect waves-block waves-light">
 						<img class="activator" src="img/fettuccini.jpg">
 					</div>
@@ -33,7 +33,7 @@
 						<p>Here is some more information about this product that is only revealed once clicked on.</p>
 					</div>
 				</div>
-				<div class="card small col s6 m4 l2">
+				<div class="card small col s12 m4 l3">
 					<div class="card-image waves-effect waves-block waves-light">
 						<img class="activator" src="img/fettuccini.jpg">
 					</div>
@@ -46,7 +46,7 @@
 						<p>Here is some more information about this product that is only revealed once clicked on.</p>
 					</div>
 				</div>
-				<div class="card small col s6 m4 l2">
+				<div class="card small col s12 m4 l3">
 					<div class="card-image waves-effect waves-block waves-light">
 						<img class="activator" src="img/fettuccini.jpg">
 					</div>
@@ -59,7 +59,7 @@
 						<p>Here is some more information about this product that is only revealed once clicked on.</p>
 					</div>
 				</div>
-				<div class="card small col s6 m4 l2">
+				<div class="card small col s12 m4 l3">
 					<div class="card-image waves-effect waves-block waves-light">
 						<img class="activator" src="img/fettuccini.jpg">
 					</div>

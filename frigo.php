@@ -27,17 +27,17 @@
 			<form action="resultats.php" method="post">
 				<?php
 				$db = new SQLite3("db/cuisineEtudiante.db");
-				$listeTypes = $db->query('SELECT * FROM alimentcat');
+				$listeTypes = $db->query('SELECT * FROM alimentcat;');
 				while($type = $listeTypes->fetchArray()){
 				echo
 				'<div class="col s12 m6 l4" >
 					<h5>'.$type[1].'</h5>';
 					
-					$listeIngredients = $db->query('SELECT * FROM ingredients WHERE TYPE = '.$type[0]);
+					$listeIngredients = $db->query('SELECT ID, NOM FROM ingredients WHERE TYPE = '.$type[0].';');
 					while($ingredient = $listeIngredients->fetchArray()){
 					echo
 					'<p>
-						<input type="checkbox" class="filled-in" id="'.$ingredient[1].'" name="placard[]" value="'.$ingredient[1].'" />
+						<input type="checkbox" class="filled-in" id="'.$ingredient[1].'" name="placard[]" value="'.$ingredient[0].'" />
 						<label class="black-text" for="'.$ingredient[1].'">'.$ingredient[1].'</label>
 					</p>';
 					}
