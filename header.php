@@ -3,7 +3,7 @@
 		<div class="container">
 			<div class="nav-wrapper">
 				<a href="index.php" class="brand-logo">
-					<img style="padding:8px" src="img/poele.ico" alt="Poele">
+					<img style="padding:8px" src="img/poele.ico" alt="Poele" id="poele">
 				</a>
 				<ul class="right hide-on-med-and-down">
 					<li><a href="frigo.php">Mon garde-manger</a></li>

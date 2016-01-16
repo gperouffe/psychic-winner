@@ -1,19 +1,27 @@
  
 <?php 
-	$placard =  $_POST['placard'];
+	if(isset($_POST["placard"])){
+		$placard = $_POST["placard"];
+	}else{
+	$placard = array();
+}
 	$db = new SQLite3("db/cuisineEtudiante.db");
-	$queryRecettes="SELECT IDRECETTE FROM correspondance WHERE IDINGR NOT IN(";
-	foreach($placard as $ingredient){
-		$queryRecettes = $queryRecettes."'".$ingredient."',";
-	}
-	$queryRecettes=substr($queryRecettes,0,strlen($queryRecettes)-1);
+	//Recherche de toutes les recettes qu'on ne peut pas faire avec les éléments du placard.
+	$queryRecettes="SELECT DISTINCT IDRECETTE FROM correspondance WHERE IDINGR NOT IN(";
+	if(count($placard)>0){
+		foreach($placard as $ingredient){
+			$queryRecettes = $queryRecettes."'".$ingredient."',";
+		}
+		$queryRecettes=substr($queryRecettes,0,strlen($queryRecettes)-1);//Retrait de la dernière virgule
+	}	
 	$queryRecettes = $queryRecettes.");";
 	$idRecettes = $db->query($queryRecettes);
-	$queryInfos="SELECT * FROM recettes WHERE ID NOT IN(";
+	//On en déduit toutes les recettes que l'on peut faire
+	$queryInfos="SELECT ID, TITRE, TEMPSPREP, TEMPSCUIS FROM recettes WHERE ID NOT IN(";
 	$id = $idRecettes->fetchArray();
 	if($id!=false){
 		do{
-			$queryInfos = $queryInfos."'".$id[0]."',";
+			$queryInfos .= "'".$id[0]."',";
 		}while($id = $idRecettes->fetchArray());
 		$queryInfos=substr($queryInfos,0,strlen($queryInfos)-1);
 	}
@@ -40,14 +48,31 @@
 	<body>	
 		<div id="header"></div>
 		
-		<div class = "container">
-		<?php
-			while($recette = $infosRecettes->fetchArray()){
-				echo "<p>".$recette[1]."<br>".$recette[2]."</p>";
+		<main class="container">
+				<h2>Résultats de la recherche</h2>
+				<div class="divider"></div>
+			<?php
+			$rec =($infosRecettes->fetchArray());
+			if($rec[0]==null){	
+				echo '<i class="material-icons left medium">local_grocery_store</i>
+					  <div class="flow-text">
+						Désolé, mais il n\'existe pas de recette avec ces ingrédients. <br>
+						Peut-être serait-il temps d\'aller faire les courses?
+					  </div>';
+			}
+			else{
+				$infosRecettes->reset();
+				echo '<div class="collection">';
+				while($recette = $infosRecettes->fetchArray()){
+					$id=$recette[0];
+					$nom=$recette[1];
+					$temps=$recette[2]+$recette[3];
+					echo '<a href="preparation.php?id='.$id.'" class="collection-item flow-text">'.$nom.'<span class="badge">'.$temps.' min</span></a>';
+				}
 			}
 			$db->close();
-		?> 	
-		</div>
+			?> 	
+		</main>
 		
 		<div id="footer"></div>
 		

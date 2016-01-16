@@ -1,3 +1,24 @@
+<?php
+	$nbResParPage = 9;
+	$db = new SQLite3("db/cuisineEtudiante.db");
+
+	if(isset($_POST["page"])){
+		$pageCourante = $_POST["page"];
+		if(!is_numeric($nbPages)){die('Numero de page invalide!');}
+	}else{
+		$pageCourante = 1;
+	}
+
+	$resultats = $db->query("SELECT COUNT(*) FROM recettes");
+	$nbRecettes = $resultats->fetchArray();
+	$nbPages = ceil($nbRecettes[0]/$nbResParPage);
+
+	$positionRes = (($pageCourante-1) * $nbResParPage);
+	
+	$recettes = $db->query("SELECT * FROM recettes ");
+
+?>
+ 
  <!DOCTYPE html>
  <html>
 	<head>
@@ -20,58 +41,13 @@
 			<div class="row container">
 				<h2>Liste des recettes</h2>
 				<div class="divider"></div>
-				<div class="card small col s12 m4 l3">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="img/fettuccini.jpg">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-						<p><a href="#">This is a link</a></p>
-					</div>
-					<div class="card-reveal ">
-						<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-						<p>Here is some more information about this product that is only revealed once clicked on.</p>
-					</div>
-				</div>
-				<div class="card small col s12 m4 l3">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="img/fettuccini.jpg">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-						<p><a href="#">This is a link</a></p>
-					</div>
-					<div class="card-reveal ">
-						<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-						<p>Here is some more information about this product that is only revealed once clicked on.</p>
-					</div>
-				</div>
-				<div class="card small col s12 m4 l3">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="img/fettuccini.jpg">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-						<p><a href="#">This is a link</a></p>
-					</div>
-					<div class="card-reveal ">
-						<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-						<p>Here is some more information about this product that is only revealed once clicked on.</p>
-					</div>
-				</div>
-				<div class="card small col s12 m4 l3">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="img/fettuccini.jpg">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-						<p><a href="#">This is a link</a></p>
-					</div>
-					<div class="card-reveal ">
-						<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-						<p>Here is some more information about this product that is only revealed once clicked on.</p>
-					</div>
-				</div>
+				
+				<div id="results"></div>			
+				<div id="loading-div"><i class="material-icons small">schedule</i> Attendez SVP, Chargement des recettes en cours</div>
+		
+				
+				
+			</div>
 				
 		</main>
 		<div id="footer"></div>
@@ -80,5 +56,6 @@
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>
 		<script type="text/javascript" src="js/headfoot.js"></script>
+		<script type="text/javascript" src="js/pagination.js"></script>
 	</body>
 </html>

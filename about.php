@@ -22,7 +22,7 @@
 			<div class=" row container">
 				<h2>A propos</h2>
 				<div class="divider"></div>
-				<p class="col s6 push-s3">Ce site a été créé par 2 étudiants affamés en école d'ingénieur. Fort de nos manques de motivation, mais désireux de manger correctement lors de nos précieuses pauses déjeuner, nous nous retrouvîmes afin de réaliser le site parfait pour tous les étudiants !
+				<p class="col s6 push-s3 flow-text">Ce site a été créé par deux étudiants affamés en école d'ingénieur. Forts de nos expériences -pas toujours fructueuses-, et désireux de manger correctement lors de nos précieuses pauses déjeuner, nous nous sommes retrouvés afin de réaliser le site parfait pour tous les étudiants !
 				</p>
 			</div>
 		</main>

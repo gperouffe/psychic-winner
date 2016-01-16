@@ -16,6 +16,10 @@
 
 	<body>	
 		<div id="header"></div>
+		
+		<main>
+		
+		</main>
 	
 		<div id="footer"></div>
 		

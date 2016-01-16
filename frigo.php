@@ -17,44 +17,50 @@
 	<body>	
 		<div id="header"></div>
 		
-		<div class="container">	
+		<main class="container">	
 			<h2>Mon garde-manger</h2> 
 			<h5>Sélectionnez les ingrédients dont vous disposez :</h5>
 			<div class="divider"></div>
 			</br>
 		
-		<div class="row">
+		
 			<form action="resultats.php" method="post">
+				<ul class="collapsible popout" data-collapsible="expandable">
 				<?php
 				$db = new SQLite3("db/cuisineEtudiante.db");
 				$listeTypes = $db->query('SELECT * FROM alimentcat;');
 				while($type = $listeTypes->fetchArray()){
 				echo
-				'<div class="col s12 m6 l4" >
-					<h5>'.$type[1].'</h5>';
+				'<li>
+				<div class="collapsible-header">
+					'.$type[1].'
+				</div>';
+				
+				echo
+				'<div class="collapsible-body row">';	
 					
 					$listeIngredients = $db->query('SELECT ID, NOM FROM ingredients WHERE TYPE = '.$type[0].';');
 					while($ingredient = $listeIngredients->fetchArray()){
 					echo
-					'<p>
-						<input type="checkbox" class="filled-in" id="'.$ingredient[1].'" name="placard[]" value="'.$ingredient[0].'" />
+					'<div class="col s1.5" style="margin-left:20px; margin-top:7px; ">
+						<input type="checkbox" id="'.$ingredient[1].'" name="placard[]" value="'.$ingredient[0].'" />
 						<label class="black-text" for="'.$ingredient[1].'">'.$ingredient[1].'</label>
-					</p>';
+					</div>';
 					}
 				
 				echo
-				'</div>';
+				'</div></li>';
 				}
 				$db->close();
-				?>  
+				?>
+				</ul>  
 				<div class="col s12 m6 l4" >
 					<button class="btn-large waves-effect orange waves-light" type="submit" name="action">Rechercher
 						<i class="material-icons right">send</i>
 					</button>
 				</div>
 			</form>
-		</div>
-		</div>
+		</main>
 	
 		<div id="footer"></div>
 		

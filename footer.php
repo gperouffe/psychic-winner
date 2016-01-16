@@ -18,7 +18,7 @@
   </div>
   <div class="footer-copyright">
 	<div class="container">
-	© 2015 La Cuisine Etudiante - Tous droits réservés
+	© 2016 La Cuisine Etudiante - Tous droits réservés
 	</div>
   </div>
 </footer>
